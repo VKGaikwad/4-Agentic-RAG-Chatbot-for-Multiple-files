@@ -79,7 +79,10 @@ if uploaded_files:
         from langchain_classic.chains import RetrievalQA
         import os
 
-        api_key = os.environ.get("GROQ_API_KEY")`r`n        if not api_key:`r`n            raise RuntimeError("Set the GROQ_API_KEY environment variable")`r`n        os.environ["OPENAI_API_KEY"] = api_key
+        api_key = os.environ.get("GROQ_API_KEY")
+        if not api_key:
+            raise RuntimeError("Set the GROQ_API_KEY environment variable")
+        os.environ["OPENAI_API_KEY"] = api_key
         llm = ChatOpenAI(
             model_name="llama-3.3-70b-versatile",
             openai_api_base="https://api.groq.com/openai/v1",  # Important!
