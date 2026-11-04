@@ -1,0 +1,38 @@
+# For Data Ingestion/Transformation with LangChain, we need to install the following dependencies:
+langchain
+langchain_community
+pypdf
+wikipedia
+#Transformations
+langchain_text_splitters
+
+#Embeding Hugging Face
+langchain_community
+chromadb 
+transformers==4.41.2
+sentence-transformers==2.7.0
+langchain-huggingface==0.0.3
+
+# RAG
+langchain 
+chromadb 
+openai 
+langchain_huggingface 
+tiktoken 
+langchain_community 
+pypdf 
+langchain_openai
+
+
+#CHAT BOT
+streamlit 
+pyngrok 
+chromadb 
+agno 
+langchain-community 
+pypdf 
+groq
+
+numpy==1.26.4
+
+
